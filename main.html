@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <title>Zipper</title>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Zipper</h1>
+            <div role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#home" data-toggle="tab">소개</a></li>
+                    <li><a href="#compress" data-toggle="tab">압축 하기</a></li>
+                    <li><a href="#decompress" data-toggle="tab">압축 풀기</a></li>
+                    <li><a href="#show-compressed" data-toggle="tab">압축된 내용물 보기</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <h3>소개</h3>
+                        <p>Zipper는 파이썬으로 만든 웹 어플리케이션입니다.</p>
+                        <p>파일/폴더를 압축하거나, 압축된 파일을 풀 수 있습니다. </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="compress">
+                        <h3>압축하기</h3>
+                        <p>압축할 파일 또는 폴더를 선택하고 생성할 압축 파일명을 지정하세요.</p>
+                        <label class="btn btn-primary btn-file">
+                            압축 대상 선택하기<input type="file" style="display: none;">
+                        </label>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="decompress">
+                        <h3>압축풀기</h3>
+                        <p>압축 파일을 선택하고 압축을 풀 곳을 지정하세요.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="show-compressed">
+                        <h3>압축된 내용물 보기</h3>
+                        <p>이곳에서는 압축 파일의 내용물을 볼 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
